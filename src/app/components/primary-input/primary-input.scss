@@ -1,6 +1,8 @@
 @import "../../../color-variable.scss";
 
 input {
+    border: none;
     border-radius: 8px;
     background-color: $gray-forms;
+    color: $text-gray;
 }

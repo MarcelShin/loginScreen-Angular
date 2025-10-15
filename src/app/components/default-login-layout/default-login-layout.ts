@@ -1,8 +1,9 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-default-login-layout',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './default-login-layout.html',
   styleUrl: './default-login-layout.scss'
 })

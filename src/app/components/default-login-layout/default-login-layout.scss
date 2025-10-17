@@ -6,7 +6,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100%;
-    
+
     section {
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@ main {
             justify-content: center;
             width: 100%;
             font-size: 14px;
-            color: $bg-light-gray;
+            color: $text-gray;
             font-weight: 400;
             gap: 20px;
 

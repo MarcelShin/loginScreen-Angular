@@ -1,6 +1,16 @@
+@import "../../../color-variable.scss";
+
 form {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 34px;
   width: 100%;
+
+  span {
+    font-size: 14px;
+    text-decoration: underline;
+    text-align: end;
+    color: $secondary-color;
+  }
 }

@@ -4,6 +4,20 @@ primaryBtnText="Login"
 secondaryBtnText="Signup"
 >
     <form [formGroup]="loginForm">
-        
+        <app-primary-input
+          formName="email"
+          type="email"
+          label="Email"
+          placeholder="Insert your email"
+        >
+          <img ngSrc="/assets/email-Icon.svg" width="20" height="20">
+        </app-primary-input>
+        <app-primary-input
+          formName="password"
+          type="password"
+          label="Your password"
+        >
+          <img ngSrc="/assets/password-Icon.svg" width="20" height="20">
+        </app-primary-input>
     </form>
 </app-default-login-layout>

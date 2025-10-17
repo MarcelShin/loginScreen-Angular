@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
 import { DefaultLoginLayout } from '../../components/default-login-layout/default-login-layout';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { PrimaryInput } from "../../components/primary-input/primary-input";
+import { NgOptimizedImage } from "@angular/common";
 
 @Component({
   selector: 'app-login',
   imports: [
     DefaultLoginLayout,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    PrimaryInput,
+    NgOptimizedImage
+],
   templateUrl: './login.html',
-  styleUrl: './login.scss'
+  styleUrls: ['./login.scss']
 })
 export class Login {
   loginForm!: FormGroup;

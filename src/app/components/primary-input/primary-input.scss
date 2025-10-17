@@ -1,8 +1,30 @@
 @import "../../../color-variable.scss";
 
-input {
-    border: none;
-    border-radius: 8px;
-    background-color: $gray-forms;
-    color: $text-gray;
+.input-wrapper {
+  color: $text-gray;
+  font-size: 16px;
+  text-align: start;
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  .input-content {
+    display: flex;
+    width: 100%;
+
+    .icon {
+      padding: 12px;
+      background: $primary-color;
+      border-radius: 0 8px 8px 0;
+    }
+
+    input {
+      border: none;
+      border-radius: 8px 0 0 8px;
+      background-color: $gray-forms;
+      padding: 12px 0 12px 20px;
+      width: 100%;
+    }
+  }
 }

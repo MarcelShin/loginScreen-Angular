@@ -4,6 +4,11 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { PrimaryInput } from "../../components/primary-input/primary-input";
 import { NgOptimizedImage } from "@angular/common";
 
+interface LoginForm {
+  email: FormControl,
+  password: FormControl
+}
+
 @Component({
   selector: 'app-login',
   imports: [
@@ -16,12 +21,12 @@ import { NgOptimizedImage } from "@angular/common";
   styleUrls: ['./login.scss']
 })
 export class Login {
-  loginForm!: FormGroup;
+  loginForm!: FormGroup<LoginForm>;
 
   constructor(){
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [Validators.required, Validators.minLength(8)])
+      password: new FormControl('', [Validators.required, Validators.minLength(6)])
     })
   }
 

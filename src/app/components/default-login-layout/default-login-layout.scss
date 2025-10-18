@@ -74,11 +74,13 @@ main {
                 background-color: $primary-color;
                 color: white;
                 box-shadow:0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
+                cursor: pointer;
             }
 
             &.btn-secondary {
                 border: 1px solid $primary-color;
                 color: $primary-color;
+                cursor: pointer;
             }
         }
     }

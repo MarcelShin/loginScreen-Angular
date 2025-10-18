@@ -3,6 +3,7 @@
     primaryBtnText="Login"
     secondaryBtnText="Signup"
     (submit)="submit()"
+    [disablePrimaryBtn]="!loginForm.valid"
 >
     <form [formGroup]="loginForm">
         <app-primary-input
@@ -18,7 +19,7 @@
           formControlName="password"
           inputName="password"
           type="password"
-          label="Your password"
+          label="Password"
           placeholder="Enter your password"
         >
           <img ngSrc="/assets/password-Icon.svg" width="20" height="20">

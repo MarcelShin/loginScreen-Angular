@@ -11,6 +11,7 @@ interface LoginForm {
 
 @Component({
   selector: 'app-login',
+  standalone: true,
   imports: [
     DefaultLoginLayout,
     ReactiveFormsModule,

@@ -5,6 +5,7 @@ type InputTypes = "text" | "email" | "password"
 
 @Component({
   selector: 'app-primary-input',
+  standalone: true,
   imports: [
     ReactiveFormsModule
   ],
@@ -29,7 +30,8 @@ export class PrimaryInput implements ControlValueAccessor{
   onTouched: any = () => {}
 
   onInput(event: Event){
-    const value = (event.target as HTMLInputElement)
+    const value = (event.target as HTMLInputElement).value
+    this.onChange(value)
   }
 
   writeValue(value: any): void {

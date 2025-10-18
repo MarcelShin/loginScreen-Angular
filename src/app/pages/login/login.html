@@ -3,7 +3,6 @@
     primaryBtnText="Login"
     secondaryBtnText="Signup"
     (submit)="submit()"
-    [disablePrimaryBtn]="!loginForm.valid"
 >
     <form [formGroup]="loginForm">
         <app-primary-input
